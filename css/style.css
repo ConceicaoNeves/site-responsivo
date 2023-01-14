@@ -1,21 +1,20 @@
-
-body{
+body {
     background-color: #fc6;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-*{ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Opens Sans', sans-serif;
 }
 
-.nav{
-    background-color: rgb(37,37,39);
+.nav {
+    background-color: rgb(37, 37, 39);
 }
 
-.nav ul{
+.nav ul {
     list-style: none;
     padding: 0;
 }
@@ -34,4 +33,29 @@ body{
 
 .nav ul li a:hover {
     background-color: rgb(24, 139, 233);
+}
+
+footer {
+    font-size: 12px;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+}
+
+footer .left {
+    width: 100%;
+    float: left;
+    border-right: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+footer .left a {
+    display: inline-block;
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    background-color: antiquewhite;
+    font-size: 12px;
+    height: 5vh;
+    width: 20%;
 }
