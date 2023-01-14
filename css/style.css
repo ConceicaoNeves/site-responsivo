@@ -2,3 +2,36 @@
 body{
     background-color: #fc6;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{ 
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Opens Sans', sans-serif;
+}
+
+.nav{
+    background-color: rgb(37,37,39);
+}
+
+.nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background.4s;
+}
+
+.nav ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
