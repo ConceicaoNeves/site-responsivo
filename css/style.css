@@ -148,22 +148,28 @@ footer .left a:hover {
         margin-top: 30px;
     }
 }
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 10%;
+  }
 
-
-div.gallery {
+.gallery {
     border: 1px solid #ccc;
   }
   
-  div.gallery:hover {
+  .gallery:hover {
     border: 1px solid #777;
   }
   
-  div.gallery img {
+  .gallery img {
     width: 100%;
     height: auto;
   }
   
-  div.desc {
+  .desc {
     padding: 15px;
     text-align: center;
   }
