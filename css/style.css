@@ -93,7 +93,44 @@ a:hover {
         overflow-y: auto;
     }
 }
+header {
+	background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 100px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  	background-image: linear-gradient( 135deg, #ceb5dd69 10%, #8060c96b 50%);	
+}
 
+h1 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
 footer {
     font-size: 12px;
     padding: 50px 10px 50px 10px;
