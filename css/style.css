@@ -99,7 +99,7 @@ a:hover {
         overflow-y: auto;
     }
 }
-/*header {
+header {
 	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
 	text-align: center;
 	width: 100%;
@@ -128,7 +128,7 @@ h1 {
 h3, p {
 	font-family: 'segoe ui';
 	margin-bottom: 30px;
-}*/
+}
 
 button {
 	border: none;
