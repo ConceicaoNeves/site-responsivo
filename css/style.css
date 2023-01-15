@@ -42,7 +42,7 @@ a.active, a:hover {
 	transition: .5s;
 }
 .checkbtn {
-	font-size: 100px;
+	font-size: 30px;
 	color: white;
 	float: right;
 	line-height: 80px;
