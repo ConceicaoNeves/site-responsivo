@@ -4,25 +4,24 @@
     --royal-blue-dark: #3946d4;
     --white: #fff;
     --backgroud: #e2e3e9;
-  }
-  
-  * {
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background: var(--backgroud);
 }
-  
+
 a {
     color: var(--white);
     text-decoration: none;
 }
-  
+
 .nav {
     display: flex;
     align-items: center;
@@ -31,95 +30,129 @@ a {
     height: 4.6875rem;
     padding: 1rem;
 }
+
 .logo {
     height: 100%;
     margin-left: 10px;
 }
-  
-  .menu {
+
+.menu {
     list-style: none;
     display: flex;
     gap: 0.5rem;
-  }
-  
-  .menu a {
+}
+
+.menu a {
     display: block;
     padding: 1rem;
     border-radius: 0.5rem;
-  }
-  
-  .menu a:hover {
-    background: var(--royal-blue-dark);
-  }
-  
-  .btn-menu {
-    display: none;
-  }
-  
-header {
-	background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
-	text-align: center;
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 85% 85% / 30%;
-}
-header .overlay{
-	width: 100%;
-	height: 100%;
-	padding: 20px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-    background-image: linear-gradient( 135deg, #9f05ff69 10%, #b85fd36b 80%);
-	
-}
-h1 {
-	font-family: 'segoe ui';
-	font-size: 30px;
-	margin-bottom: 10px;
 }
 
-h3, p {
-	font-family: 'segoe ui';
-	margin-bottom: 10px;
+.menu a:hover {
+    background: var(--royal-blue-dark);
+}
+
+.btn-menu {
+    display: none;
+}
+
+header {
+    background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #9f05ff69 10%, #b85fd36b 80%);
+}
+
+h1 {
+    font-family: 'segoe ui';
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3,
+p {
+    font-family: 'segoe ui';
+    margin-bottom: 10px;
 }
 
 .botao {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #0000003b;
 }
-.botao:hover{
-	cursor: pointer;
+
+.botao:hover {
+    cursor: pointer;
 }
-#servicos{
+
+#servicos {
     text-align: center;
 }
-.nsei{
+
+.nsei {
     display: flex;
     justify-content: space-evenly;
 }
-.servico{
+
+.servico {
     width: 50%;
-background-color: #04AA6D;
+    background-color: #04AA6D;
 }
+
+#ctt {
+    text-align: center;
+    font-size: 18px;
+}
+
+.ctt-ln {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.ctt-rs {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+.ctt-rs a {
+    color: #000000;
+}
+
+.ctt-rs a:hover {
+    color: #ffffff;
+    background-color: rgb(177, 168, 168);
+}
+
 footer {
     font-size: 12px;
-    padding: 50px 10px 50px 10px;
+    padding: 10px 10px 0 10px;
     text-align: center;
     margin-bottom: 3%;
 }
 
 footer .left {
     width: 100%;
+    list-style-type: none;
     border-right: 25px;
     margin-bottom: 20px;
     padding: 0;
@@ -127,20 +160,15 @@ footer .left {
 
 footer .left a {
     list-style-type: none;
+    font-size: 16px;
     display: inline;
-    line-height: 35px;
     text-decoration: none;
     color: rgb(3, 3, 3);
-    font-size: 12px;
-    height: 7vh;
-    width: 7%;
-}
-
-footer .left a {
-    font-size: 18px;
-    font-family: 'Source Sans Pro', sans-serif;
+    height: 10vh;
+    width: 10%;
     padding-left: 19px;
     padding-right: 19px;
+    text-decoration: none;
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
@@ -155,81 +183,9 @@ footer .left a:hover {
     color: rgb(0, 0, 0);
 }
 
-@media (max-width: 600px) {
-    .menu {
-      display: block;
-      position: absolute;
-      top: 4.6875rem;
-      left: 0;
-      background: var(--royal-blue-light);
-      text-align: center;
-      width: 100%;
-      height: 0;
-      z-index: 1;
-      visibility: hidden;
-      overflow-y: hidden;
-      transition: 0.5s;
-    }
-    .menu a {
-      padding: 1rem 0;
-      margin-inline: 1rem;
-      border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-      border-radius: 0;
-    }
-    .btn-menu {
-      background: none;
-      border: none;
-      font: inherit;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--white);
-      padding: 1rem 0;
-      cursor: pointer;
-    }
-    .hamburger {
-      border-top: 0.125rem solid;
-      width: 1.25rem;
-    }
-    .hamburger::after,
-    .hamburger::before {
-      content: " ";
-      display: block;
-      width: 1.25rem;
-      height: 0.125rem;
-      background: currentColor;
-      margin-top: 0.3125rem;
-      position: relative;
-      transition: 0.3s;
-    }
-    .nav:focus-within .menu {
-      height: calc(100vh - 4.6875rem);
-      visibility: visible;
-      overflow-y: auto;
-    }
-    .nav:focus-within .hamburger {
-      border-top-color: transparent;
-    }
-    .nav:focus-within .hamburger::before {
-      transform: rotate(135deg);
-    }
-    .nav:focus-within .hamburger::after {
-      transform: rotate(-135deg);
-      top: -0.4375rem;
-    }
-
-    header {
-        background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
-        text-align: center;
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-attachment: fixed;
-        position: relative;
-        overflow: hidden;
-        border-radius: 0 0 5% 60% / 10%;
-    }
-  }
+footer .left a.voltar:hover {
+    background-color: #ffffff;
+}
 
 @media (max-width:800px) {
     .footer .left {
@@ -241,80 +197,167 @@ footer .left a:hover {
         margin-top: 30px;
     }
 }
+
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background: var(--royal-blue-light);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav:focus-within .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav:focus-within .hamburger {
+        border-top-color: transparent;
+    }
+    .nav:focus-within .hamburger::before {
+        transform: rotate(135deg);
+    }
+    .nav:focus-within .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+    header {
+        background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 5% 60% / 10%;
+    }
+}
+
+@media (max-width:800px) {
+    .footer .left {
+        width: 50%;
+        margin-top: 30px;
+    }
+    .footer .left a {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
 .container {
-  display: flex;
-  width: 100%;
-  padding: 4% 2%;
-  box-sizing: border-box;
-  height: 100vh;
-  
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
 }
 
 .box {
-  flex: 1;
-  overflow: hidden;
-  transition: .5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
-  line-height: 0;
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
 }
 
-.box > img {
-  width: 200%;
-  height: calc(100% - 10vh);
-  object-fit: cover; 
-  transition: 3s;
- 
+.box>img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: 3s;
 }
 
-.box > span {
-  font-size: 3.8vh;
-  display: block;
-  text-align: center;
-  height: 10vh;
-  line-height: 2.6;
-}
-
-.box:hover { flex: 1 1 100%; }
-.box:hover > img {
-  width: 100%;
-  height: 90%;
-}
-@media screen and (max-width: 780px) {
-  .container {
-    display: flex;
-    width: 100%;
-    box-sizing:content-box;
-    height: 50vh;
-  }
-  .box:hover { flex: 0 0 100%; }
-  .box > span {
-    font-size: 2.5vh;
+.box>span {
+    font-size: 3.8vh;
     display: block;
     text-align: center;
     height: 10vh;
     line-height: 2.6;
-  }
-  .box > img {
-    width: 100%;
-    height: calc(100% - 10vh);  
-   
-  }
-  
 }
+
+.box:hover {
+    flex: 1 1 100%;
+}
+
+.box:hover>img {
+    width: 100%;
+    height: 90%;
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        display: flex;
+        width: 100%;
+        box-sizing: content-box;
+        height: 50vh;
+    }
+    .box:hover {
+        flex: 0 0 100%;
+    }
+    .box>span {
+        font-size: 2.5vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+    .box>img {
+        width: 100%;
+        height: calc(100% - 10vh);
+    }
+}
+
 @media screen and (max-width: 500px) {
-  .container {
-      display: inline;
-      width: 50%;
-      padding: 4% 2%;
-      box-sizing: border-box;
-      height: 100vh;
-      
+    .container {
+        display: inline;
+        width: 50%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100vh;
     }
-    .box > img {
-      width: 100%;
-      height: calc(100% - 10vh);  
-     
+    .box>img {
+        width: 100%;
+        height: calc(100% - 10vh);
     }
-   
 }
