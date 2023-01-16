@@ -4,35 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>Ricardo Fotos</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
 </head>
 
 <body>
+    <section class="header">
+    <a href="/" class="logo">Ricardo Fotos 📷</a>
     <nav class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <div class="nav-title">
-                Ricardo Fotos
-            </div>
-        </div>
-        <!--<a href="#">Ricardo Fotos</a>-->
-        <div class="nav-btn">
-            <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-        </div>
-        <ul class="nav-links">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        > Menu<span class="hamburger"></span></button>
+        <ul class="menu" id="menu" role="menu">
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#fotos">Fotos</a>
             <a href="#contato">Contato</a>
         </ul>
     </nav>
+</section>
 
     <header>
         <div class="overlay" style="padding-left:-20px">
