@@ -33,6 +33,7 @@ a {
 }
 .logo {
     height: 100%;
+    margin-left: 10px;
 }
   
   .menu {
@@ -102,7 +103,7 @@ h3, p {
 #servicos{
     text-align: center;
 }
-.slaqlqrnome{
+.nsei{
     display: flex;
     justify-content: space-evenly;
 }
