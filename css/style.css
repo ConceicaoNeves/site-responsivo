@@ -76,11 +76,12 @@ header .overlay {
     text-shadow: 1px 1px 1px #333;
     background-image: linear-gradient( 135deg, #9f05ff69 10%, #b85fd36b 80%);
 }
+
 .icon {
-  height: 40px;
-  width: auto;
-  margin: 2%;
-    }
+    height: 40px;
+    width: auto;
+    margin: 2%;
+}
 
 h1 {
     font-family: 'segoe ui';
@@ -118,15 +119,16 @@ p {
     justify-content: space-evenly;
 }
 
-.servi,.servi2{
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  width: auto;
-  height: auto;
+.servi,
+.servi2 {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: auto;
+    height: auto;
 }
 
-.servico{
+.servico {
     width: 50%;
     background-color: #04AA6D;
 }
@@ -152,8 +154,12 @@ p {
 }
 
 .ctt-rs a:hover {
-    color: #ffffff;
-    background-color: rgb(177, 168, 168);
+    color: #000000;
+}
+
+.ctt-img {
+    width: auto;
+    height: 40%;
 }
 
 footer {
@@ -166,38 +172,17 @@ footer {
 footer .left {
     width: 100%;
     list-style-type: none;
-    border-right: 25px;
-    margin-bottom: 20px;
     padding: 0;
 }
 
 footer .left a {
     list-style-type: none;
-    font-size: 16px;
+    font-size: 14px;
     display: inline;
     text-decoration: none;
     color: rgb(3, 3, 3);
     height: 10vh;
     width: 10%;
-    padding-left: 19px;
-    padding-right: 19px;
-    text-decoration: none;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-footer .left a.voltar {
-    background-color: #04AA6D;
-    color: #ffffff;
-    border-color: #04AA6D;
-}
-
-footer .left a:hover {
-    color: rgb(0, 0, 0);
-}
-
-footer .left a.voltar:hover {
-    background-color: #ffffff;
 }
 
 @media (max-width:800px) {
@@ -209,11 +194,10 @@ footer .left a.voltar:hover {
         width: 50%;
         margin-top: 30px;
     }
-    .nsei{
-      flex-direction:column;
-      margin: 0px;
+    .nsei {
+        flex-direction: column;
+        margin: 0px;
     }
-  
 }
 
 @media (max-width: 600px) {
@@ -291,31 +275,38 @@ footer .left a.voltar:hover {
     }
 }
 
-.icon{
-  display: inline-block;
-  margin: 3%;
+.icon {
+    display: inline-block;
+    margin: 3%;
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
+    #ctt {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    #rdp {
+        font-size: 10px;
+    }
     .footer .left {
-        width: 50%;
-        margin-top: 30px;
+        width: 30%;
+        margin-top: 10px;
     }
     .footer .left a {
-        width: 50%;
-        margin-top: 30px;
+        width: 30%;
+        margin-top: 10px;
     }
-    .nsei{
-      display: flex;
+    .footer .left a.voltar {
+        font-size: 8px;
     }
-    #servicos{
-      display: block;
+    .nsei {
+        display: flex;
     }
-    
-    
-    
-    
-    
+    #servicos {
+        display: block;
+    }
 }
 
 .container {
