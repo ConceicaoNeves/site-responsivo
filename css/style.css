@@ -85,14 +85,12 @@ header .overlay {
 }
 
 h1 {
-    font-family: 'segoe ui';
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 h3,
 p {
-    font-family: 'segoe ui';
     margin-bottom: 10px;
 }
 
@@ -109,12 +107,12 @@ p {
 .botao:hover {
     cursor: pointer;
 }
-.container-sobre{
+#sobre{
     display: flex;
     justify-content: space-evenly;
     
 }
-#sobre{
+.container-sobre{
     text-align: center;
     margin: 3%;
     width: 70%;
@@ -125,7 +123,7 @@ p {
     text-align: center;
 }
 
-.nsei {
+.service {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
@@ -156,7 +154,6 @@ p {
     text-align: center;
 }
 .container {
-   
     display: flex;
     width: 100%;
     padding: 4% 2%;
@@ -164,8 +161,6 @@ p {
     height: 100vh;
 }
   
-
-
 .box {
     flex: 1;
     overflow: hidden;
@@ -249,8 +244,43 @@ footer .left a {
     height: 10vh;
     width: 10%;
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    
+    .service {
+        flex-direction: column;
+        margin: 0px;
+    }
+    .container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        box-sizing:content-box;
+        height: 50vh;
+    }
+    .box:hover {
+        flex: 0 0 100%;
+    }
+    .box > span {
+        font-size: 2.5vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+    .box>img {
+        width: 100%;
+        height: calc(100% - 10vh);
+    }
+    .footer .left {
+        width: 50%;
+        margin-top: 30px;
+    }
+    .footer .left a {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 576px) {
     .menu {
         display: block;
         position: absolute;
@@ -324,7 +354,7 @@ footer .left a {
         border-radius: 0 0 5% 60% / 10%;
     }
     
-    .nsei {
+    .service {
         display: flex;
     }
     #servicos {
@@ -359,41 +389,5 @@ footer .left a {
     }
     .footer .left a.voltar {
         font-size: 8px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    
-    .nsei {
-        flex-direction: column;
-        margin: 0px;
-    }
-    .container {
-        display: inline;
-        width: 100%;
-        box-sizing: content-box;
-        height: 50vh;
-    }
-    .box:hover {
-        flex: 0 0 100%;
-    }
-    .box>span {
-        font-size: 2.5vh;
-        display: block;
-        text-align: center;
-        height: 10vh;
-        line-height: 2.6;
-    }
-    .box>img {
-        width: 100%;
-        height: calc(100% - 10vh);
-    }
-    .footer .left {
-        width: 50%;
-        margin-top: 30px;
-    }
-    .footer .left a {
-        width: 50%;
-        margin-top: 30px;
     }
 }
