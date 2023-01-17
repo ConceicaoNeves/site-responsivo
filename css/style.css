@@ -76,6 +76,11 @@ header .overlay {
     text-shadow: 1px 1px 1px #333;
     background-image: linear-gradient( 135deg, #9f05ff69 10%, #b85fd36b 80%);
 }
+.icon {
+  height: 40px;
+  width: auto;
+  margin: 2%;
+    }
 
 h1 {
     font-family: 'segoe ui';
@@ -113,7 +118,15 @@ p {
     justify-content: space-evenly;
 }
 
-.servico {
+.servi,.servi2{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.servico{
     width: 50%;
     background-color: #04AA6D;
 }
@@ -196,6 +209,11 @@ footer .left a.voltar:hover {
         width: 50%;
         margin-top: 30px;
     }
+    .nsei{
+      flex-direction:column;
+      margin: 0px;
+    }
+  
 }
 
 @media (max-width: 600px) {
@@ -273,6 +291,11 @@ footer .left a.voltar:hover {
     }
 }
 
+.icon{
+  display: inline-block;
+  margin: 3%;
+}
+
 @media (max-width:800px) {
     .footer .left {
         width: 50%;
@@ -282,6 +305,17 @@ footer .left a.voltar:hover {
         width: 50%;
         margin-top: 30px;
     }
+    .nsei{
+      display: flex;
+    }
+    #servicos{
+      display: block;
+    }
+    
+    
+    
+    
+    
 }
 
 .container {
