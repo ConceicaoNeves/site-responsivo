@@ -1,9 +1,9 @@
 :root {
     font-size: 16px;
-    --royal-blue-light: #5E376D;
-    --royal-blue-dark: #462354;
+    --royal-purple-light: #5E376D;
+    --royal-purple-dark: #462354;
     --white: #fff;
-    --backgroud: #e2e3e9;
+    --backgroud: #e5d7eb;
 }
 
 * {
@@ -26,7 +26,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--royal-blue-light);
+    background: var(--royal-purple-light);
     height: 4.6875rem;
     padding: 1rem;
 }
@@ -50,7 +50,7 @@ a {
 }
 
 .menu a:hover {
-    background: var(--royal-blue-dark);
+    background: var(--royal-purple-dark);
 }
 
 .btn-menu {
@@ -75,7 +75,7 @@ header .overlay {
     padding: 20px;
     color: #FFF;
     text-shadow: 1px 1px 1px #333;
-    background-image: linear-gradient( 135deg, #9f05ff69 10%, #b85fd36b 80%);
+    background-image: linear-gradient( 135deg, #683f8369 10%, #a287acdf 90%);
 }
 
 .icon {
@@ -102,9 +102,8 @@ p {
     padding: 10px 20px;
     border-radius: 50px;
     color: #333;
-    background: #fff;
+    background:#d5c3dc;
     margin-bottom: 50px;
-    box-shadow: 0 3px 20px 0 #0000003b;
 }
 
 .botao:hover {
@@ -120,8 +119,6 @@ p {
     margin: 3%;
     width: 70%;
     padding-bottom: 20px;
-    border-style: groove;
-    border-radius: 10px;
 }
 
 #servicos {
@@ -146,15 +143,18 @@ p {
 .servico {
     margin: 1%;
     width: 48%;
-    background-color:  #c3c6d8;
+    background-color: #d5c3dc;
+    border-radius: 5px;
     border-style: outset;
-    border-radius: 10px;
 }
 .icon {
     display: inline-block;
     margin: 3%;
 }
 
+#fotos{
+    text-align: center;
+}
 .container {
    
     display: flex;
@@ -196,40 +196,42 @@ p {
     width: 100%;
     height: 90%;
 }
-#ctt {
+#contato {
     text-align: center;
     font-size: 18px;
 }
 
-.ctt-ln {
+.contato-ln {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
 }
 
-.ctt-rs {
+.contato-rs {
     display: inline-block;
     padding: 0 10px 0 10px;
 }
 
-.ctt-rs a {
+.contato-rs a {
     color: #000000;
 }
 
-.ctt-rs a:hover {
+.contato-rs a:hover {
     color: #000000;
 }
 
-.ctt-img {
+.contato-img {
     width: auto;
     height: 40%;
 }
 
 footer {
     font-size: 12px;
-    padding: 10px 10px 0 10px;
+    padding-bottom: 1px;
     text-align: center;
-    margin-bottom: 3%;
+    padding-top: 1%;
+    border-top: solid var(--royal-purple-dark) 1px;
+    background-color: #d5c3dc;
 }
 
 footer .left {
@@ -254,7 +256,7 @@ footer .left a {
         position: absolute;
         top: 4.6875rem;
         left: 0;
-        background: var(--royal-blue-light);
+        background: var(--royal-purple-light);
         text-align: center;
         width: 100%;
         height: 0;
@@ -341,7 +343,7 @@ footer .left a {
         height: calc(100% - 10vh);
     }
 
-    #ctt {
+    #contato {
         font-size: 10px;
     }
     #rdp {
