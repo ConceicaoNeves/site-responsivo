@@ -150,7 +150,52 @@ p {
     border-style: outset;
     border-radius: 10px;
 }
+.icon {
+    display: inline-block;
+    margin: 3%;
+}
 
+.container {
+   
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+  
+
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
+.box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: 3s;
+ 
+}
+
+.box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 100%; }
+.box:hover > img {
+    width: 100%;
+    height: 90%;
+}
 #ctt {
     text-align: center;
     font-size: 18px;
@@ -203,22 +248,7 @@ footer .left a {
     width: 10%;
 }
 
-@media (max-width:800px) {
-    .footer .left {
-        width: 50%;
-        margin-top: 30px;
-    }
-    .footer .left a {
-        width: 50%;
-        margin-top: 30px;
-    }
-    .nsei {
-        flex-direction: column;
-        margin: 0px;
-    }
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .menu {
         display: block;
         position: absolute;
@@ -291,20 +321,29 @@ footer .left a {
         overflow: hidden;
         border-radius: 0 0 5% 60% / 10%;
     }
-}
+    
+    .nsei {
+        display: flex;
+    }
+    #servicos {
+        display: block;
+    }
 
-.icon {
-    display: inline-block;
-    margin: 3%;
-}
+    .container {
+        display: inline;
+        width: 50%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+    .box>img {
+        width: 100%;
+        height: calc(100% - 10vh);
+    }
 
-@media (max-width:600px) {
     #ctt {
         font-size: 10px;
     }
-}
-
-@media (max-width:600px) {
     #rdp {
         font-size: 10px;
     }
@@ -319,58 +358,16 @@ footer .left a {
     .footer .left a.voltar {
         font-size: 8px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    
     .nsei {
-        display: flex;
+        flex-direction: column;
+        margin: 0px;
     }
-    #servicos {
-        display: block;
-    }
-}
-
-.container {
-    display: flex;
-    width: 100%;
-    padding: 4% 2%;
-    box-sizing: border-box;
-    height: 100vh;
-}
-
-.box {
-    flex: 1;
-    overflow: hidden;
-    transition: .5s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
-    line-height: 0;
-}
-
-.box>img {
-    width: 200%;
-    height: calc(100% - 10vh);
-    object-fit: cover;
-    transition: 3s;
-}
-
-.box>span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    height: 10vh;
-    line-height: 2.6;
-}
-
-.box:hover {
-    flex: 1 1 100%;
-}
-
-.box:hover>img {
-    width: 100%;
-    height: 90%;
-}
-
-@media screen and (max-width: 780px) {
     .container {
-        display: flex;
+        display: inline;
         width: 100%;
         box-sizing: content-box;
         height: 50vh;
@@ -389,18 +386,12 @@ footer .left a {
         width: 100%;
         height: calc(100% - 10vh);
     }
-}
-
-@media screen and (max-width: 500px) {
-    .container {
-        display: inline;
+    .footer .left {
         width: 50%;
-        padding: 4% 2%;
-        box-sizing: border-box;
-        height: 100vh;
+        margin-top: 30px;
     }
-    .box>img {
-        width: 100%;
-        height: calc(100% - 10vh);
+    .footer .left a {
+        width: 50%;
+        margin-top: 30px;
     }
 }
