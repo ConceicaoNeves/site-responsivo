@@ -343,11 +343,10 @@ footer .left a {
         border-top-color: transparent;
     }
     .nav:focus-within .hamburger::before {
-        transform: rotate(135deg);
+        color: transparent;
     }
     .nav:focus-within .hamburger::after {
-        transform: rotate(-135deg);
-        top: -0.4375rem;
+        color: transparent;
     }
     header {
         background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
