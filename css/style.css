@@ -317,7 +317,7 @@ footer .left a {
         gap: 0.5rem;
         color: var(--white);
         padding: 1rem 0;
-        cursor: pointer;
+        
     }
     .hamburger {
         border-top: 0.125rem solid;
@@ -344,9 +344,11 @@ footer .left a {
     }
     .nav:focus-within .hamburger::before {
         color: transparent;
+        cursor:auto;
     }
     .nav:focus-within .hamburger::after {
         color: transparent;
+        cursor:auto;
     }
     header {
         background: url('https://fotografiadicas.com.br/wp-content/uploads/2018/07/112.1-fotografo-iniciante-fotografia-dicas-min.png');
